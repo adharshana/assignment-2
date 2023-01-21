@@ -1,0 +1,581 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+PROGRAM ONCONTROLSTATEMENTS 
+1.SUMOFSERIES
+
+Program1:
+#Series0,2,6,12,	N
+n=int(input("Entertherangeofnumber(limit):"))i=1
+while(i<=n):print((i*i)-i,end="")
+i+=1
+Output1:
+Entertherangeofnumber(limit):702612203042
+
+Program2:
+#Series0,2,8,14,24,34	N
+n=int(input("Entertherangeofnumber(limit):"))i=1
+pr=0while(i<=n):
+if(i%2==0):
+pr=pow(i,2)-2
+ 
+print(pr,end=" ")else:
+pr=pow(i,2)-1
+print(pr,end="")
+
+i+=1
+Output2:
+Entertherangeofnumber(limit):80281424344862
+
+Program3:
+#Series14710	N
+n=int(input("Entertherangeofnumber(limit):"))i=1
+while(i<=n+1):print(i)
+i=i+3
+print("It'stheseries")
+
+
+
+
+
+Output3:
+Enter the rangeof number(limit):401
+4
+10
+13
+16
+19
+22
+25
+28
+31
+34
+37
+40
+It's the series
+ 
+
+Program4:
+#Series1^3+2^3+3^3	N^3
+n=int(input("Enter the value:"))res=0
+for i in range(1,n+1):res=res+(i*i*i)
+
+print("Series:",res)
+
+Output
+Enter the value:4 
+Series: 100 
+Program5:
+#Series2+4+6+	N
+n=int(input("Entertherangeofnumber:"))sum=0
+i=0while(i<=n):
+sum+=ii+=2
+print("Series:",sum)
+
+Output5:
+Enter the range of number:12Series: 42
+
+
+
+
+
+
+
+
+
+Program6:
+#Series1+11+111+1111	N
+n=int(input("Enterthenumberofterm:"))
+s=0sum1=0
+print("Seriesare",end="")for i inrange(0,n):
+s=s*10+1print(s,end=" ")sum1=sum1+s
+print()
+
+print("Seriessum=",sum1)
+
+Output6:
+Enter the number of term:5Seriesare111111111111111
+Seriessum=12345
+
+
+
+
+
+Program7:
+#Series9+99+999+9999...N
+n=int(input("Enterthenumberofterm:"))s=0
+sum1=0
+print("Seriesare",end="")for i inrange(0,n):
+s=s*10+9print(s,end=" ")sum1=sum1+s
+print()
+print("Seriessum=",sum1)
+Output7:
+Enter the number of term:5Seriesare999999999999999
+Seriessum=111105
+
+
+
+
+
+
+
+Program8:
+#Fibonacciseries
+n = int(input("Enter the value of 'n': "))a=0
+b=1
+sum=0
+count= 1
+print("FibonacciSeries:",end ="")while(count <=n):
+print(sum, end = " ")count +=1
+a=b
+b =sum
+sum=a+b
+Output8:
+Enterthevalueof'n': 8
+Fibonacci Series:011235813
+
+
+
+
+
+Program9:
+#Series1/2!+2/3!+3/4!	N/(N+1)!
+s=0f=1
+n=int(input("Enterthenumber:"))for iinrange(1,n+1):
+f=(f+1)*is=s+(i/f)
+
+print(s)
+
+Output9:
+Enter the number:51.0328809767012013
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program10:
+#Series1+3+5+7	N
+print("Entertherangeofnumber:")
+n=int(input())sum=0
+i=1while(i<=n):
+sum+=ii+=2
+print("Series:",sum)
+
+Output10:
+Enter the range of number:51Series: 676
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program11:
+#Series1+2+3+4+	N
+n=int(input("Enter the value:"))sum=0
+for i in range(1,n+1):sum+=i
+
+print("Series:",sum)
+
+Output11:
+Enter the value:9Series: 45
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program12:
+#Series1!+2!+3!	N!
+n=int(input("Enter the value:"))fact=1
+for i in range(1,n+1):fact=fact*i
+
+print(fact)
+
+
+Output 12:Enter the value:5120
+
+ 
+                          2.NUMBERPATTERN
+
+Program1:
+#Numberpattern1
+n=int(input("Enterthenumberofrows:"))for iinrange(n):
+for j in range(i):print(i,end="")
+
+print("")
+Output1:
+Enterthenumberofrows:6
+1
+22
+333
+4444
+55555
+
+
+
+
+
+
+
+Program2
+#Numberpattern  2
+n=int(input("Enterthenumberofrows:"))for iinrange(1,n+1):
+for j in range(1,i+1):print(j,end='')
+
+print("")
+
+
+
+Output2:
+Enterthenumberofrows:51
+12
+123
+1234
+12345
+
+
+
+
+
+
+
+Program3:
+#Number pattern3
+n=int(input("Enterthenumberofrows:"))b=0
+for i in range(n,0,-1):b+=1
+for j in range(1,i+1):print(b,end="")
+
+print('\r')
+
+
+Output3:
+Enterthenumberofrows:511111
+2 2 2 2
+333
+44
+5
+
+
+
+Program4:
+#Number pattern4
+n=int(input("Enterthenumberofrows:"))for iinrange(n):
+for j in range(i,n):print('5',end="")
+
+print()
+
+
+Output4:
+Enterthenumberofrows:555555
+5555
+555
+55
+5
+
+
+
+
+
+
+Program5:
+#Numberpattern5
+n=int(input("Enterthenumberofrows:"))i=1
+while(i<=n):j=1while(j<=i):
+print((i*2-1),end="")j=j+1
+i=i+1
+print("")
+
+Output5:
+Enterthenumberofrows:5
+1
+33
+555
+7777
+99999
+
+
+
+Program6:
+#Numberpattern6
+n=int(input("Enterthenumberofrows:"))for iinrange(1,n):
+for j in range(i,0,-1):print(j,end="")
+print("")
+
+Output6:
+
+Enterthenumberofrows:61
+21
+321
+4321
+54321
+
+
+
+
+
+
+
+
+
+
+
+3.PYRAMIDPATTERN
+
+Program1:
+#Pyramidpattern1
+n=int(input("Enterthenumberofrows:"))for iinrange(0,n):
+for j in range(0,i+1):print('*',end="")
+print("\r")
+Output:
+Enterthenumberofrows:5
+*
+**
+***
+****
+*****
+
+
+
+
+
+
+Program2:
+#Pyramidpattern2
+n=int(input("Enterthenumberofrows:"))for iinrange(n+1,0,-1):
+for j in range(0,i-1):print('*',end="")
+
+print("")
+
+Output2:
+Enterthenumberofrows:5
+*****
+****
+***
+**
+*
+
+
+
+
+
+
+
+
+
+
+Program3:
+#Pyramidpattern3
+n=int(input("Enterthenumberofrows:"))for iinrange(n):
+print("",end="")
+for j in range(n-i):print("*",end="")
+print("")
+
+
+Output3:
+Enterthenumberofrows:6
+******
+*****
+****
+***
+**
+*
+
+
+
+
+
+
+
+Program4:
+#Pyramidpattern4
+n=int(input("Enterthenumberofrows:"))for iinrange(n):
+forjinrange(i):
+print(" ",end="")
+
+print("")
+Output4:
+Enterthenumberofrows:5
+*****
+****
+***
+**
+*
+
+
+
+
+
+
+
+
+
+
+
+Program5:
+#Pyramidpattern5
+n=int(input("Enterthenumberofrows:"))m=(2*n)-2
+foriinrange(0,n):forjinrange(0,m):
+print(end=" ")m=m-1
+for j in range(0,i+1):print("*",end=)
+
+print("")
+
+Output5:
+Enterthenumberofrows:6
+*
+**
+***
+****
+*****
+******
+Program6:
+#Pyramidpattern6
+n=int(input("Enterthenumberofrows:"))for iinrange(0,n):
+for j in range(0,i+1):print("*",end="")
+print("\r")
+
+foriinrange(n,0,-1):
+for j in range(0,i-1):print("*",end="")
+print("\r")
+Output6:
+Enterthenumberofrows:5
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+
+
+PROGRAMSON CONDITION
+Program1:
+#Decimal tobinaryn=int(input("Enterthenumber:"))sum=0
+while(n>0):r=n%2sum=sum*10+rn=n//2
+
+print(sum)
+Output1:
+Enter the number:4611101
+
+Program2:
+#Binary to decimaln=int(input("Enterthenum:"))num=n
+sum=0base=1while(n>0):
+rem=n%10sum=sum+rem*basen=n//10base=base*2
+
+print(sum)
+
+Output2:
+Enter the num:110113
+
+Program3:
+#Armstrong numbern=int(input("Enterthenum:"))num=n
+sum=0while(n>0):
+rem=n%10sum=sum+(rem**3)n=n//10
+
+if(sum==num):print("Armstrongnumber")
+else:
+print("NotArmstrongnumber")
+
+Output3:
+
+Enter the num:153Armstrongnumber
+Program4:
+#Reversing a numbern=int(input("Enter the num:"))num=n
+sum=0while(n>0):
+rem=n%10sum=(sum*10)+remn=n//10
+
+print(sum)
+
+
+Output4:
+Enter the num:153351
+
+Program5:
+#Prime numbers between 1 to 50start=int(input("Enter the lower bound:"))stop=int(input("Entertheupperbound:"))
+
+print("Primenumbersare:")
+for n in range(start,stop):if(n>1):
+for i in range(2,n):if(n%i)==0:
+breakelse:
+print(n,end="")
+
+Output5:
+Enter the lower bound:1Enter the upper bound:50Prime numbersare:
+23571113171923293137414347
+
+
+Program6:
+#Leapyear between1900to2000start=int(input("Enter the lower bound year:"))stop=int(input("Enterthehigherboundyear:"))years=[]
+for year in range(start,stop+1):if(year%400==0):
+years.append(year)
+elif ((year%4==0)and(year%100!=0)):years.append(year)
+print(years)
+
+
+
+
+
+
+Output6:
+Enter the lower bound year:1900Enterthehigherbound year:2000
+[1904,1908,1912,1916,1920,1924,1928,1932,1936,
+1940,1944,1948,1952,1956,1960,1964,1968,1972,1976,
+1980,1984,1988,1992,1996,2000]
+
+
+
+
+
+
+
+Webreference:
+
+https://www.programiz.com/python-programming/exampleshttps://pynative.com/python-exercises-with-solutions/
+https://www.geeksforgeeks.org/python-programming-language/
